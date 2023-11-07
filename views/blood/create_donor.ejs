@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blood Donation Form</title>
+    <script>
+      const watchID = navigator.geolocation.watchPosition((position) => {
+        console.log(position.coords.latitude);
+        console.log(position.coords.longitude);
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid" style="margin: auto 0; padding: 50px">
+      <h2>Blood Donor Form</h2>
+      <form name="donorForm" method="POST" action="/bloodDonor">
+        <label
+          >Full Name:
+          <input
+            type="text"
+            name="fullName"
+            value="<%= donor.name %>"
+          /> </label
+        ><br />
+        <label>Age: <input type="number" name="age" /> </label><br />
+        <label
+          >Gender: <input type="radio" name="gender" value="Male" /> Male
+          <input type="radio" name="gender" value="Female" /> Female </label
+        ><br />
+        <label
+          >Blood Group:
+          <select name="bloodGroup">
+            <option value="Select One">Select One</option>
+            <option value="A+ve">A +ve</option>
+            <option value="A-ve">A -ve</option>
+            <option value="B+ve">B +ve</option>
+            <option value="B -ve">B -ve</option>
+            <option value="O+ve">O +ve</option>
+            <option value="O -ve">O -ve</option>
+          </select> </label
+        ><br />
+        <label>Location: <input type="text" name="watchID" /> </label><br />
+
+        <label>Phone Number: <input type="tel" name="phoneNumber" /> </label
+        ><br />
+        <label
+          >Previously Donated or not ?
+          <input type="radio" name="donatedEarlier" value="YES" /> Yes
+          <input type="radio" name="donatedEarlier" value="NO" /> No </label
+        ><br />
+        <label
+          >Last Donated on:
+          <input type="datetime-local" name="dateTime" /> </label
+        ><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blood Recepient Form</title>
+  </head>
+
+  <h2>Blood Donor Form</h2>
+  <form method="POST" action="/recepients">
+    <label
+      >Full Name:
+      <input type="text" name="fullName" value="<%= recepient.name %>" /> </label
+    ><br />
+    <label
+      >Age:
+      <input type="number" name="age" /> </label
+    ><br />
+    <label
+      >Gender: <input type="radio" name="gender" value="male" /> Male
+      <input type="radio" name="gender" value="female" /> Female </label
+    ><br />
+    <label
+      >Blood Group:
+      <input type="text" name="bloodGroup" /> </label
+    ><br />
+    <label
+      >Location:
+      <input type="text" name="location" /> </label
+    ><br />
+    <label
+      >Date and Time:
+      <input type="datetime-local" name="dateTime" /> </label
+    ><br />
+    <label
+      >Phone Number:
+      <input type="tel" name="phoneNumber" /> </label
+    ><br />
+    <label
+      >Previously Donated or not ?
+      <input type="radio" name="donatedEarlier" value="YES" /> Yes
+      <input type="radio" name="donatedEarlier" value="NO" /> No </label
+    ><br />
+    <input type="submit" value="Submit" />
+  </form>
+</html>
