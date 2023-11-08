@@ -1,5 +1,5 @@
 body {
-  background-image: url("../static/assets/banner-2.jpg");
+  background-image: url("../assets/banner-2.jpg");
 }
 * {
   margin: 0;
@@ -17,15 +17,15 @@ body {
 
 .bg_blood {
   /* background-color: #ff7878; */
-  /* background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../static/assets/SS__4_.jpeg'); */
-  background: url("../static/assets/SS__4_.jpeg");
+  /* background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assets/SS__4_.jpeg'); */
+  background: url("../assets/SS__4_.jpeg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   height: 1000px;
   width: auto;
   /* margin: 0 auto -20px; */
-  /* background-image: url('../static/assets/SS__4_.jpeg'); */
+  /* background-image: url('../assets/SS__4_.jpeg'); */
 }
 
 .background__create_donor {
