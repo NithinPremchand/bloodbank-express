@@ -2,6 +2,7 @@ const express = require("express");
 const BloodRecepient = require("../models/recepient_model");
 const router = express.Router()
 
+router.use(express.static('public'))
 
 router.get('/', async (req, res) => {
     res.render('blood/create_recepient', {recepient : new BloodRecepient()})

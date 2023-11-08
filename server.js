@@ -12,8 +12,6 @@ app.set('views', __dirname + '/views')
 app.set('layout', 'layouts/layout')
 app.use(expressLayouts)
 app.use(express.static('public'))
-app.use('/css', express.static('./css/bootstrap.min.css'));
-app.use('/js', express.static('./js/bootstrap.min.js'));
 
 const indexRouter = require('./routes/home')
 const donorsRouter = require('./routes/donor')

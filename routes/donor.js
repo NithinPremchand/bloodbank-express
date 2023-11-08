@@ -2,6 +2,8 @@ const express = require("express");
 const BloodDonor = require("../models/donor_model");
 const router = express.Router()
 
+router.use(express.static('public'))
+
 router.get('/',(req, res) => {
     res.render('blood/blood_home')
 })
